@@ -14,25 +14,27 @@ int main()
     {
         printf("El primero de sus digitos es: %d", num );
     }
-    else
+    else if (num>0)
     {
 
-        for (int i = 1; i < num; i*=10)
+        for (int i = 1; i <= num; i*=10)
         {
             if ((num/i>=1)&&(num/i<=9))
             {
                 printf("El primero de sus digitos es: %d", num/i);
             }
         }
-
-
-        for (int j = -1; j < num; j*=10)
+    }
+    else if (num<0)
+    {
+        num= (-1)*num;
+        for (int j = 1; j <= num; j*=10)
         {
             if ((num/j>=1)&&(num/j<=9))
             {
-                printf("El primero de sus digitos es: %d", num/j);
+                printf("El primero de sus digitos es: -%d", num/j);
             }
-        }
+        }        
     }
 
     return 0;    
