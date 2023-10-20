@@ -1,0 +1,1 @@
+/*Leer un número entero y determinar si es primo*/
