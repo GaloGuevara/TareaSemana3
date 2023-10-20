@@ -8,9 +8,32 @@ int main()
 
     printf("Ingrese un numero entero: ");
     scanf("%d%*c", &num);
-    printf("El numero ingresado es: %d\n", num);
+    printf("El numero ingresado es: %d\n\n", num);
 
-    char letra;
-    letra=num;
-    printf("El primero de sus digitos es: %c", letra);
+    if (num==0)
+    {
+        printf("El primero de sus digitos es: %d", num );
+    }
+    else
+    {
+
+        for (int i = 1; i < num; i*=10)
+        {
+            if ((num/i>=1)&&(num/i<=9))
+            {
+                printf("El primero de sus digitos es: %d", num/i);
+            }
+        }
+
+
+        for (int j = -1; j < num; j*=10)
+        {
+            if ((num/j>=1)&&(num/j<=9))
+            {
+                printf("El primero de sus digitos es: %d", num/j);
+            }
+        }
+    }
+
+    return 0;    
 }
