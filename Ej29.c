@@ -4,5 +4,9 @@
 
 int main()
 {
-    
+    int num;
+
+    printf("Ingrese un numero entero: ");
+    scanf("%d%*c", &num);
+    printf("El numero ingresado es: %d\n", num);
 }
