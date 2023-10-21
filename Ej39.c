@@ -11,6 +11,8 @@ Utilizando el concepto de ciclo, generar la serie de Fibonacci hasta llegar o so
 int main() // funcion main
 {
 
+    printf("SERIE DE FIBONACCI!!!\n\n");
+
     int cont0 = 0, cont1 = 1; // declaracion de variables iniciales que serviran de contadores
     int resul;                // variable que manejamos como resultado para ir contanto el resultado
 
@@ -25,5 +27,6 @@ int main() // funcion main
         cont1 = resul;         // reescribimos el valor del contador 1
     }
 
+    printf("\n\nFIN");
     return 0;
 }
