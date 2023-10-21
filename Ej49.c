@@ -23,17 +23,57 @@ int main()
         if ((i>0)&&(i<=3))
         {
             j=1;
+
+            if (i==1)
+            {
+                k=1;
+            }
+            else if (i==2)
+            {
+                k=2;
+            }
+            else if (i==3)
+            {
+                k=3;
+            }
+            
         }
         else if ((i>3)&&(i<=6))
         {
             j=2;
+
+            if (i==4)
+            {
+                k=1;
+            }
+            else if (i==5)
+            {
+                k=2;
+            }
+            else if (i==6)
+            {
+                k=3;
+            }
         } 
         else if ((i>6)&&(i<=9))
         {
             j=3;
+
+            if (i==7)
+            {
+                k=1;
+            }
+            else if (i==8)
+            {
+                k=2;
+            }
+            else if (i==9)
+            {
+                k=3;
+            }            
         }
         
-        printf("%d\t%d\n", i,j);
+        printf("%d\t%d\t%d\n", i,j,k);
     }
     
 }
