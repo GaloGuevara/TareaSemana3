@@ -19,8 +19,21 @@ int main()
     int i,j,k;
 
     for (int i = 1; i < 10; i++)
-    {
-        printf("%d\n", i);
+    {   
+        if ((i>0)&&(i<=3))
+        {
+            j=1;
+        }
+        else if ((i>3)&&(i<=6))
+        {
+            j=2;
+        } 
+        else if ((i>6)&&(i<=9))
+        {
+            j=3;
+        }
+        
+        printf("%d\t%d\n", i,j);
     }
     
 }
