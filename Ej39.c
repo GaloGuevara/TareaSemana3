@@ -14,7 +14,7 @@ int main() // funcion main
     printf("SERIE DE FIBONACCI!!!\n\n");
 
     int cont0 = 0, cont1 = 1; // declaracion de variables iniciales que serviran de contadores
-    int resul;                // variable que manejamos como resultado para ir contanto el resultado
+    int resul=0;                // variable que manejamos como resultado para ir contanto el resultado
 
     printf("%d\n%d\n", cont0, cont1); // mostramos los dos primeros números que empiezan la serie
 
